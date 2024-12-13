@@ -1,4 +1,4 @@
-package com.bank.kafka_pro.config;
+package com.bank.datageneratormicroservice.config;
 
 import com.jcabi.xml.XML;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
-package com.bank.kafka_pro.service;
+package com.bank.datageneratormicroservice.service;
 
-import com.bank.kafka_pro.model.Data;
+import com.bank.datageneratormicroservice.model.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

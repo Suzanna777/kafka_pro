@@ -1,4 +1,4 @@
-package com.bank.kafka_pro.model;
+package com.bank.datageneratormicroservice.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

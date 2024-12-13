@@ -1,4 +1,4 @@
-package com.bank.kafka_pro;
+package com.bank.datageneratormicroservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

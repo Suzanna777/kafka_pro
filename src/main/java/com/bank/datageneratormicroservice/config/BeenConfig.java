@@ -1,7 +1,6 @@
-package com.bank.kafka_pro.config;
-
-import com.jcabi.xml.SaxonDocument;
+package com.bank.datageneratormicroservice.config;
 import com.jcabi.xml.XML;
+import com.jcabi.xml.XMLDocument;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,9 +11,10 @@ public class BeenConfig {
     @SneakyThrows
     @Bean
     public XML producerXml(){
-        return new SaxonDocument(
+        return new XMLDocument(
                 getClass().getResourceAsStream("/kafka/producer.xml").readAllBytes()
         );
     }
+
 
 }

@@ -1,12 +1,12 @@
-package com.bank.kafka_pro.web.controller;
-import com.bank.kafka_pro.model.Data;
-import com.bank.kafka_pro.model.test.DataTestOptions;
-import com.bank.kafka_pro.service.KafkaDataService;
-import com.bank.kafka_pro.service.TestDataService;
-import com.bank.kafka_pro.web.dto.DataDto;
-import com.bank.kafka_pro.web.dto.DataTestOptionsDto;
-import com.bank.kafka_pro.web.mapper.DataMapper;
-import com.bank.kafka_pro.web.mapper.DataTestOptionsMapper;
+package com.bank.datageneratormicroservice.web.controller;
+import com.bank.datageneratormicroservice.model.Data;
+import com.bank.datageneratormicroservice.model.test.DataTestOptions;
+import com.bank.datageneratormicroservice.service.KafkaDataService;
+import com.bank.datageneratormicroservice.service.TestDataService;
+import com.bank.datageneratormicroservice.web.dto.DataDto;
+import com.bank.datageneratormicroservice.web.dto.DataTestOptionsDto;
+import com.bank.datageneratormicroservice.web.mapper.DataMapper;
+import com.bank.datageneratormicroservice.web.mapper.DataTestOptionsMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,4 +31,6 @@ public class DataController {
         DataTestOptions testOptions = dataTestOptionsMapper.toEntity(testOptionsDto);
         testDataService.sendMessages(testOptions);
     }
+
+
 }

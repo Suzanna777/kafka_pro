@@ -1,4 +1,4 @@
-package com.bank.kafka_pro.web.mapper;
+package com.bank.datageneratormicroservice.web.mapper;
 
 import java.util.List;
 
